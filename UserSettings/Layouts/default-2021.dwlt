@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 21
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 242
     height: 429.33334
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 63
+  controlID: 22
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 64
+  controlID: 23
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,22 +382,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Weapons/knife/source/Knife
+    - Assets/Props/21-treasure-map-treasure-inktober2019/textures
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Weapons/knife/source/Knife
+  - Assets/Props/21-treasure-map-treasure-inktober2019/textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ASUS\VR-slasher
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 611}
-    m_SelectedIDs: 847f0000
-    m_LastClickedID: 32644
-    m_ExpandedIDs: 00000000707f0000727f0000747f0000767f0000787f00007a7f00007c7f00007e7f0000807f0000827f0000847f0000867f0000887f00008a7f00008c7f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 147.00003}
+    m_SelectedIDs: 9e850000
+    m_LastClickedID: 34206
+    m_ExpandedIDs: 000000002a8200002c8200002e82000030820000328200003482000036820000388200003a8200003c8200003e820000408200004282000044820000468200009485000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,7 +425,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000707f0000727f0000747f0000767f0000787f00007a7f00007c7f00007e7f0000807f0000827f0000847f0000867f0000887f00008a7f00008c7f0000
+    m_ExpandedIDs: 000000002a8200002c8200002e82000030820000328200003482000036820000388200003a8200003c8200003e82000040820000428200004482000046820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000206e00003a6c00009e81000056710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 54
+  m_LastVerticalScrollValue: 270
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -552,10 +552,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 6140}
-      m_SelectedIDs: 42730000
-      m_LastClickedID: 29506
-      m_ExpandedIDs: 026dffffb673ffff60a5ffff62a5ffffecddffff0cdeffff02f0ffff9ef5fffff6faffff1473000074740000dc7500004a76000094760000d2760000fa7600000477000020770000d478000072790000c4790000fe790000587a0000967a0000a47a0000c67a0000087b0000b27b0000
+      scrollPos: {x: 0, y: 8940.667}
+      m_SelectedIDs: 18d8feff
+      m_LastClickedID: -75752
+      m_ExpandedIDs: 1cd8feff3adffeff36e2feff38e2feffdeb3ffff96e4ffff4cf0ffff80f0ffff1cfbffffac740000b2750000de7500004e760000be760000d2760000e676000072770000fc770000d4790000267a0000aa7a0000d47a00002a7b0000767b0000927b0000d07b00002a7c0000387c0000727c0000367d0000587d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -804,9 +804,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 51.354733, y: 39.437836, z: 222.9304}
+    m_Target: {x: 43.55157, y: 2.248641, z: 34.65559}
     speed: 2
-    m_Value: {x: 51.354733, y: 39.437836, z: 222.9304}
+    m_Value: {x: 43.55157, y: 2.248641, z: 34.65559}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -853,13 +853,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.40830874, y: -0.08152505, z: 0.036642123, w: 0.9084594}
+    m_Target: {x: -0.10069831, y: 0.024464628, z: -0.0024917806, w: -0.99463224}
     speed: 2
-    m_Value: {x: 0.40967023, y: -0.08146985, z: 0.036764305, w: 0.90784436}
+    m_Value: {x: -0.10218819, y: 0.024460398, z: -0.0025284293, w: -0.9944611}
   m_Size:
-    m_Target: 179.53528
+    m_Target: 4.192623
     speed: 2
-    m_Value: 187.99506
+    m_Value: 4.192623
   m_Ortho:
     m_Target: 0
     speed: 2
