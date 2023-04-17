@@ -360,6 +360,33 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="VisualDesignCafe.Editor.Events">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.OpenWorldNature">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Editor.OpenWorldNature.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.PackageManager">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Editor.PackageManager.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Nature.Editor">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.Web">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Packages">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Packages.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Nature">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.Community">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Editor.Community.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity 2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
     </Reference>
