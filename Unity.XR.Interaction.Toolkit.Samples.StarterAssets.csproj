@@ -315,6 +315,12 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity 2021.3.8f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="VisualDesignCafe.Editor.Events">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.OpenWorldNature">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Editor.OpenWorldNature.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
@@ -324,20 +330,35 @@
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
+    <Reference Include="VisualDesignCafe.Editor.PackageManager">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Editor.PackageManager.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="VisualDesignCafe.Nature.Editor">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Editor.Web">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Packages">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Packages.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="VisualDesignCafe.Nature">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
@@ -351,41 +372,20 @@
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="VisualDesignCafe.Editor">
+      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Editor.Events">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Editor.OpenWorldNature">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Editor.OpenWorldNature.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Editor.PackageManager">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Editor.PackageManager.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Nature.Editor">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Editor.Web">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Packages">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Packages.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Nature">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.OpenWorldNature\VisualDesignCafe.Nature.dll</HintPath>
-    </Reference>
-    <Reference Include="VisualDesignCafe.Editor">
-      <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.Assemblies\VisualDesignCafe.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="VisualDesignCafe.Editor.Community">
       <HintPath>Assets\Open World Nature\Plugins\com.VisualDesignCafe.PackageManager\VisualDesignCafe.Editor.Community.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity 2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
