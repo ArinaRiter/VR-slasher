@@ -1,0 +1,34 @@
+# Blender 3.4.1 MTL File: 'DuneDweller.blend'
+# www.blender.org
+
+newmtl Cloth
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Cloth Diffuse10 2k.png
+map_d C:/ClothAlphaBake 2k.png
+map_Bump -bm 1.000000 C:/Cloth Normal Bake 2k.png
+
+newmtl Eye
+Ns 490.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Diffuse11 2k.png
+map_Ke C:/Diffuse11 2k.png
+
+newmtl Skin
+Ns 62.500000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Diffuse11 2k.png
+map_Bump -bm 1.000000 C:/Nomal Bake1 2k.png
