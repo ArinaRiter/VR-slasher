@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 3ef75b38b6ec6764b80603a4c4131866
+guid: 626d90cc1dea3ad4ba2d87e9d0e3a90f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Attack
+    second: Run
   externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -36,18 +36,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Attack
+      name: Run
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 79
+      lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
