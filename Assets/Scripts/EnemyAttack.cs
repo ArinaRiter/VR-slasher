@@ -3,7 +3,7 @@ using System;
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] private float _attackRange;
-    [SerializeField] private int _damage;
+    [SerializeField] private float _damage;
 
     [SerializeField] private float _coolDown;
 
