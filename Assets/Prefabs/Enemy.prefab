@@ -126,10 +126,10 @@ MonoBehaviour:
     maximumInterval: 2
     visualizeSensitivity: 0
   canMove: 1
-  speed: 3
+  speed: 2
   orientation: 0
   enableRotation: 1
-  rotationSpeed: 10
+  rotationSpeed: 8
   interpolatePathSwitches: 1
   switchPathInterpolationSpeed: 5
   targetCompatibility: {fileID: 0}
@@ -280,15 +280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 604a5954ea86fe541b6e5007d14a543a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.076883554
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 604a5954ea86fe541b6e5007d14a543a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00000011920929
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 604a5954ea86fe541b6e5007d14a543a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.41546988
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 604a5954ea86fe541b6e5007d14a543a, type: 3}
       propertyPath: m_LocalRotation.w
