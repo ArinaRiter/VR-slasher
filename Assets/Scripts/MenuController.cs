@@ -9,4 +9,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Grey Box");
     }
+
+    public void ExitBtn()
+    {
+        Application.Quit();
+    }
 }
