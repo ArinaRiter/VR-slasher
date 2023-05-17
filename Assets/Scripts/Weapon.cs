@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    private bool Hit;
     private Player _player;
-    private Player _enemyIsDied;
 
     private GameObject curEnemy;
 
@@ -14,8 +12,8 @@ public class Weapon : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Hit = true;
             curEnemy = other.gameObject;
+            _player.TryAttackEnemy(curEnemy);
         }
     }
 
@@ -23,20 +21,4 @@ public class Weapon : MonoBehaviour
     {
         _player = GameObject.FindObjectOfType<Player>();
     }
-
-    private void Update()
-    {
-        if (Hit)
-        {
-            _player.TryAttackEnemy(curEnemy);
-            Hit = false;
-        }
-
-        if (_enemyIsDied)
-        {
-            Destroy(curEnemy);
-        }
-    }
-
-
 }

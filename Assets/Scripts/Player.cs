@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _health;
     [SerializeField] private float _maxHealth = 16;
+    [SerializeField] private float _experience;
 
     [SerializeField] private float _playerDmg;
-
-    public bool _enemyIsDied { get; private set; }
 
     private void Start()
     {
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Died");
             SceneManager.LoadScene("Dead");
+            _experience = 0;
             return;
         }
         else
@@ -31,22 +32,22 @@ public class Player : MonoBehaviour
 
     public void TryAttackEnemy(GameObject curEnemy)
     {
-        EnemyHit(_playerDmg, curEnemy);
+        EnemyHit(_playerDmg + (_experience/100), curEnemy);
         Debug.Log("TryAttack");
     }
 
     public void EnemyHit(float _playerDmg, GameObject curEnemy)
     {
-        if (curEnemy.gameObject.GetComponent<EnemyAI>()._enemyHP - _playerDmg <= 0)
+        if (curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP - _playerDmg <= 0)
         {
-            curEnemy.gameObject.GetComponent<EnemyAI>()._enemyHP = 0;
+            curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP = 0;
             Destroy(curEnemy);
-            _enemyIsDied = true;
+            _experience += Random.Range(90,120);
             return;
         }
         else
         {
-            curEnemy.gameObject.GetComponent<EnemyAI>()._enemyHP -= _playerDmg;
+            curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP -= _playerDmg;
             return;
 
         }

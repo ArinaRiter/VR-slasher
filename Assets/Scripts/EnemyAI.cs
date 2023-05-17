@@ -15,7 +15,18 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _targetFollowRange;
     [SerializeField] private EnemyAttack _enemyAttack;
 
-    [SerializeField] public float _enemyHP;
+    [SerializeField] private float _enemyHP;
+    public float _EnemyHP
+    {
+        get
+        {
+            return _enemyHP;
+        }
+        set
+        {
+            _enemyHP = value;
+        }
+    }
 
     [SerializeField] private float _stopTargetFollowingRange;
 
