@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 817949029782392232}
   - component: {fileID: 5413285389593629192}
   - component: {fileID: 3600798689627680296}
+  - component: {fileID: 8815657287844675736}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,6 +60,7 @@ MonoBehaviour:
   _roamTarget: {fileID: 9211371981961168190}
   _targetFollowRange: 7
   _enemyAttack: {fileID: 2554122219632894808}
+  _enemyHP: 5
   _stopTargetFollowingRange: 15
   _aiDestinationSetter: {fileID: 817949029782392232}
   _enemyAnimator: {fileID: 8094187966322356181}
@@ -224,6 +226,20 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!136 &8815657287844675736
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131044137447955692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.19428802
+  m_Height: 2.0412354
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.0756462, z: -0.002635181}
 --- !u!1 &9211371981961168190
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _targetFollowRange;
     [SerializeField] private EnemyAttack _enemyAttack;
 
+    [SerializeField] public float _enemyHP;
+
     [SerializeField] private float _stopTargetFollowingRange;
 
     [SerializeField] private AIDestinationSetter _aiDestinationSetter;
@@ -27,6 +29,7 @@ public class EnemyAI : MonoBehaviour
 
     private EnemyStates _currentState;
     private Vector3 _roamPosition;
+    private float _enemyMaxHP = 5;
 
     void Start()
     {
@@ -35,6 +38,8 @@ public class EnemyAI : MonoBehaviour
         _currentState = EnemyStates.Roaming;
 
         _roamPosition = GenerateRoamPosition();
+
+        _enemyHP = _enemyMaxHP;
     }
 
     void Update()
