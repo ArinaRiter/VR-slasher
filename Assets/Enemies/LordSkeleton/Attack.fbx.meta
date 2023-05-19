@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 37a93ceba853783418d577e27369fbae
+guid: 4e60f3d06033a8945af0746cff6bf731
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: StandUp
+    second: Attack
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -22,7 +22,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
       rotation in copied configuration does not match rotation in animation file:\n\t'chest'
-      : rotation error = 32.277599 deg\n"
+      : rotation error = 7.250048 deg\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar
@@ -41,11 +41,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: StandUp
+      name: Attack
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 166
+      lastFrame: 45
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -10,9 +10,9 @@ public class Weapon : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.transform.root.gameObject.CompareTag("Enemy"))
         {
-            curEnemy = other.gameObject;
+            curEnemy = other.gameObject.transform.root.gameObject;
             _player.TryAttackEnemy(curEnemy);
         }
     }

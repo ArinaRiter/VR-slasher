@@ -40,7 +40,7 @@ public class EnemyAI : MonoBehaviour
 
     private EnemyStates _currentState;
     private Vector3 _roamPosition;
-    private float _enemyMaxHP = 5;
+    [SerializeField] private float _enemyMaxHP;
 
     void Start()
     {
