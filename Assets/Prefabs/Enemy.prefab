@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 817949029782392232}
   - component: {fileID: 5413285389593629192}
   - component: {fileID: 3600798689627680296}
+  - component: {fileID: 2137769907}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
@@ -58,11 +59,12 @@ MonoBehaviour:
   _roamTarget: {fileID: 9211371981961168190}
   _targetFollowRange: 7
   _enemyAttack: {fileID: 2554122219632894808}
-  _enemyHP: 5
+  _enemyHP: 15
   _stopTargetFollowingRange: 15
   _aiDestinationSetter: {fileID: 817949029782392232}
   _enemyAnimator: {fileID: 8094187966322356181}
   _aiPath: {fileID: 3600798689627680296}
+  _enemyMaxHP: 15
 --- !u!114 &2554122219632894808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +197,24 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!143 &2137769907
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131044137447955692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.2
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &9211371981961168190
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +481,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594744020121259068}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -542,7 +562,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713962216650901056}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -623,7 +643,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095586036489360824}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -703,7 +723,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538213764911479515}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -783,7 +803,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2825245812415155508}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -864,13 +884,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3585057550843057399}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 1
 --- !u!136 &2731947133607639320
 CapsuleCollider:
@@ -945,7 +965,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4959273551664458996}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1026,13 +1046,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6359652085367962559}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 1
 --- !u!136 &5813146391525517172
 CapsuleCollider:
@@ -1107,7 +1127,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6456626018486940562}
   serializedVersion: 2
-  m_Mass: 1.875
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1188,7 +1208,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8070642549246409721}
   serializedVersion: 2
-  m_Mass: 1.25
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1274,7 +1294,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9014671829566597045}
   serializedVersion: 2
-  m_Mass: 3.125
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
