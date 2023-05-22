@@ -37,12 +37,18 @@ public class EnemyAttack : MonoBehaviour
 
         _timer = 0;
 
+        if (_player.enemyisdead)
+        {
+            _attackRange = 0;
+        }
+
     }
 
     public void TryAttackPlayer()
     {
         _player.TakeDamage(_attackRange);
-
+        var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
+        slash.Play();
         CanAttack = false;
     }
 }

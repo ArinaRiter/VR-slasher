@@ -11,6 +11,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float _experience;
 
     [SerializeField] private float _playerDmg;
+    [SerializeField] private bool _enemyisdead;
+    public bool enemyisdead
+    {
+        get { return _enemyisdead; }
+        set { _enemyisdead = value; }
+    }
 
     private void Start()
     {
@@ -46,6 +52,8 @@ public class Player : MonoBehaviour
             //Destroy(curEnemy);
             curEnemy.gameObject.GetComponent<Animator>().enabled = false;
             curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
+            _enemyisdead = true;
+            //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
             var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
             foreach (var collider in colliders)
             {
