@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float _playerDmg;
     [SerializeField] private bool _enemyisdead;
+    //[SerializeField] private AudioSource _deathsound;
     public bool enemyisdead
     {
         get { return _enemyisdead; }
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Died");
             SceneManager.LoadScene("Dead");
+            //_deathsound.Play();
             _experience = 0;
             return;
         }

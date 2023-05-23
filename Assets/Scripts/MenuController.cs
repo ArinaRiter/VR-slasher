@@ -27,7 +27,7 @@ public class MenuController : MonoBehaviour
     }
     public void StartBtn(int sceneId)
     {
-        SceneManager.LoadScene("Grey Box");
+        //SceneManager.LoadScene("Grey Box");
         StartCoroutine(LoadSceneAsync(sceneId));//
     }
 
