@@ -17704,8 +17704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1741c13115e54484090fbd9a9d28b38f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: 0}
   animator: {fileID: 707128451}
   _range: 3
+  _light: {fileID: 0}
 --- !u!4 &1022634465148081574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4611822275043935924, guid: ae0a6ea740840054f98f882100fc5e86, type: 3}
@@ -17884,6 +17886,10 @@ PrefabInstance:
     - target: {fileID: 5624916311756819846, guid: 283e271fdd3ad5341acfac7754ac652b, type: 3}
       propertyPath: m_Name
       value: treasurechest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5624916311756819846, guid: 283e271fdd3ad5341acfac7754ac652b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8443485669952755859, guid: 283e271fdd3ad5341acfac7754ac652b, type: 3}
       propertyPath: m_IsActive
