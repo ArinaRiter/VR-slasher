@@ -45,7 +45,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (_player.enemyisdead)
         {
-            _attackRange = 0;
+            _player.deadEnemy.GetComponent<EnemyAttack>()._attackRange = 0;
         }
 
     }

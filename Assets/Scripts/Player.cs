@@ -12,8 +12,13 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float _playerDmg;
     [SerializeField] private bool _enemyisdead;
+    private GameObject DeadEnemy;
 
-    private GameObject deadEnemy;
+    public GameObject deadEnemy
+    {
+        get { return DeadEnemy; }
+        set { DeadEnemy = value; }
+    }
     //[SerializeField] private AudioSource _deathsound;
     public bool enemyisdead
     {
