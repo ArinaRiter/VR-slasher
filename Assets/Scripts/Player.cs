@@ -55,27 +55,55 @@ public class Player : MonoBehaviour
 
     public void EnemyHit(float _playerDmg, GameObject curEnemy)
     {
-        if (curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP - _playerDmg <= 0)
+        if (curEnemy.gameObject.layer == 10)
         {
-            curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP = 0;
-            curEnemy.gameObject.GetComponent<Animator>().enabled = false;
-            curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
-            _enemyisdead = true;
-            deadEnemy = curEnemy;
-            var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
-            foreach (var collider in colliders)
+            if (curEnemy.gameObject.GetComponent<BossAI>()._bossHP - _playerDmg <= 0)
             {
-                collider.GetComponent<Collider>().isTrigger = false;
+                curEnemy.gameObject.GetComponent<BossAI>()._bossHP = 0;
+                //Destroy(curEnemy);
+                curEnemy.gameObject.GetComponent<Animator>().enabled = false;
+                curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
+                _enemyisdead = true;
+                deadEnemy = curEnemy;
+                //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
+                var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
+                foreach (var collider in colliders)
+                {
+                    collider.GetComponent<Collider>().isTrigger = false;
+                }
+                _experience += Random.Range(90, 120);
+                Destroy(deadEnemy, 10);
+                return;
             }
-            _experience += Random.Range(90,120);
-            Destroy(deadEnemy, 10);
-            return;
+            else
+            {
+                curEnemy.gameObject.GetComponent<BossAI>()._bossHP -= _playerDmg;
+                return;
+            }
         }
         else
         {
-            curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP -= _playerDmg;
-            return;
-
-        }
+            if (curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP - _playerDmg <= 0)
+            {
+                curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP = 0;
+                curEnemy.gameObject.GetComponent<Animator>().enabled = false;
+                curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
+                _enemyisdead = true;
+                deadEnemy = curEnemy;
+                var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
+                foreach (var collider in colliders)
+                {
+                    collider.GetComponent<Collider>().isTrigger = false;
+                }
+                _experience += Random.Range(90, 120);
+                Destroy(deadEnemy, 10);
+                return;
+            }
+            else
+            {
+                curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP -= _playerDmg;
+                return;
+            }
+        }   
     }
 }
