@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class TreasureChest : MonoBehaviour
 {
-    private GameObject _player = GameObject.FindWithTag("player");
-    private static readonly int near = Animator.StringToHash("playerIsNear");
     [SerializeField] private Animator animator;
-    [SerializeField] private float _range;
-    private GameObject _light = GameObject.FindWithTag("TreasureLight");
+    [SerializeField] private float _range = 2;
+    private string open = "Near";
+    private Player _player;
+    void Start()
+    {
+        _player = FindObjectOfType<Player>();
+    }
     void Update()
     {
         if (Vector3.Distance(gameObject.transform.position, _player.transform.position) < _range)
         {
-            animator.SetBool(near, true);
-            _light.SetActive(true);
+            animator.SetBool(open, true);
         }
-        //else
-        //{
-        //    animator.SetBool(near, false);
-        //}
+
     }
 }

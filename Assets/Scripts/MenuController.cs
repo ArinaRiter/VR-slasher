@@ -8,6 +8,7 @@ public class MenuController : MonoBehaviour
 {
     public GameObject LoadingScreen;
     public Image LoadingBarFill;
+    [SerializeField] private AudioSource audio;
 
     //public void LoadScene(int sceneId)
     //{
@@ -28,11 +29,13 @@ public class MenuController : MonoBehaviour
     public void StartBtn(int sceneId)
     {
         //SceneManager.LoadScene("Grey Box");
+        audio.Play();
         StartCoroutine(LoadSceneAsync(sceneId));//
     }
 
     public void ExitBtn()
     {
+        audio.Play();
         Application.Quit();
     }
 }

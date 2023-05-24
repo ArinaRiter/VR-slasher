@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float _playerDmg;
     [SerializeField] private bool _enemyisdead;
+
+    private GameObject deadEnemy;
     //[SerializeField] private AudioSource _deathsound;
     public bool enemyisdead
     {
@@ -51,17 +53,17 @@ public class Player : MonoBehaviour
         if (curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP - _playerDmg <= 0)
         {
             curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP = 0;
-            //Destroy(curEnemy);
             curEnemy.gameObject.GetComponent<Animator>().enabled = false;
             curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
             _enemyisdead = true;
-            //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
+            deadEnemy = curEnemy;
             var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
             foreach (var collider in colliders)
             {
                 collider.GetComponent<Collider>().isTrigger = false;
             }
             _experience += Random.Range(90,120);
+            Destroy(deadEnemy, 10);
             return;
         }
         else

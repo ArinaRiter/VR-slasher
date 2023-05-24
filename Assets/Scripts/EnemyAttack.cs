@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System;
+using Random = UnityEngine.Random;
+
 public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] private float _attackRange;
@@ -9,6 +11,9 @@ public class EnemyAttack : MonoBehaviour
 
     private float _timer;
 
+    public AudioClip[] sounds;
+    private AudioSource source;
+
     public bool CanAttack { get; private set; }
 
     private Player _player;
@@ -17,6 +22,7 @@ public class EnemyAttack : MonoBehaviour
     private void Start()
     {
         _player = GameObject.FindObjectOfType<Player>();
+        source = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -48,6 +54,8 @@ public class EnemyAttack : MonoBehaviour
     {
         _player.TakeDamage(_attackRange);
         var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
+        source.clip = sounds[Random.Range(0, sounds.Length)];
+        source.PlayDelayed(0.8f);
         slash.Play();
         CanAttack = false;
     }
