@@ -45,19 +45,18 @@ public class EnemyAttack : MonoBehaviour
 
         if (_player.enemyisdead)
         {
-            _player.deadEnemy.GetComponent<EnemyAttack>()._damage = 0;
+            _player.deadEnemy.GetComponent<EnemyAttack>()._attackRange = 0;
         }
 
     }
 
     public void TryAttackPlayer()
     {
-        _player.TakeDamage(_damage);
+        _player.TakeDamage(_attackRange);
         var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
         source.clip = sounds[Random.Range(0, sounds.Length)];
         source.PlayDelayed(0.8f);
         slash.Play();
-        Debug.Log("TryAttackPlayer");
         CanAttack = false;
     }
 }
