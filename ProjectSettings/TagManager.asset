@@ -9,6 +9,7 @@ TagManager:
   - player
   - Enemy
   - TreasureLight
+  - Boss
   layers:
   - Default
   - TransparentFX
