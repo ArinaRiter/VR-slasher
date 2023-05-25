@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
         get { return DeadEnemy; }
         set { DeadEnemy = value; }
     }
-    private GameObject DeadEnemy;
     //[SerializeField] private AudioSource _deathsound;
     public bool enemyisdead
     {
