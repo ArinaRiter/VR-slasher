@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private bool _enemyisdead;
     private GameObject DeadEnemy;
     public UIManager _UImanager;
-
+    public float valueforhealthbar;
 
     public GameObject deadEnemy
     {
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         else
         {
             _health -= damage;
-            UIManager.SetHealthBarValue(_health / _maxHealth);
+            valueforhealthbar = (_health / _maxHealth);
             return;
         }
     }

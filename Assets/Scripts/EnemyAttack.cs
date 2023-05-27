@@ -59,5 +59,10 @@ public class EnemyAttack : MonoBehaviour
         slash.Play();
         Debug.Log("TryAttackPlayer");
         CanAttack = false;
+        Invoke("sethbvalue", 1);
+    }
+    public void sethbvalue()
+    {
+        UIManager.SetHealthBarValue(_player.valueforhealthbar);
     }
 }
