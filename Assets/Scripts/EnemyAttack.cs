@@ -13,11 +13,14 @@ public class EnemyAttack : MonoBehaviour
 
     public AudioClip[] sounds;
     private AudioSource source;
+    private Weapon weapon;
 
     public bool CanAttack { get; private set; }
 
     private Player _player;
     public float AttackRange => _attackRange;
+
+    //[SerializeField] private ParticleSystem[] psarray;
 
     private void Start()
     {
@@ -53,9 +56,18 @@ public class EnemyAttack : MonoBehaviour
     public void TryAttackPlayer()
     {
         _player.TakeDamage(_damage);
+        //var slash = curEnemy.GetComponentInChildren<ParticleSystem>();
         var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
         source.clip = sounds[Random.Range(0, sounds.Length)];
         source.PlayDelayed(0.8f);
+        //if (psarray.Length > 0)
+        //{
+        //    for (int i = 0; i < psarray.Length; i++)
+        //    {
+        //        psarray[i].Play();
+        //    }
+
+        //}
         slash.Play();
         Debug.Log("TryAttackPlayer");
         CanAttack = false;
