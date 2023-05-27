@@ -11,6 +11,9 @@ public class BossAnimator : MonoBehaviour
     private static readonly int Strafe = Animator.StringToHash("IsStrafing");
     private static readonly int fightIdle = Animator.StringToHash("FightIdle");
 
+    private static readonly int Block = Animator.StringToHash("Block");
+    private static readonly int Impact = Animator.StringToHash("Impact");
+
 
     public void PlayAttack()
     {
@@ -21,6 +24,14 @@ public class BossAnimator : MonoBehaviour
     public void PlayKick()
     {
         _bossAnimator.SetTrigger(Kick);
+    }
+    public void PlayBlock()
+    {
+        _bossAnimator.SetTrigger(Block);
+    }
+    public void PlayImpact()
+    {
+        _bossAnimator.SetTrigger(Impact);
     }
 
     public void IsIdle(bool condition)

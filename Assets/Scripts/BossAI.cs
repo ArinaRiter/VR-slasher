@@ -125,6 +125,13 @@ public class BossAI : MonoBehaviour
             }
         }
     }
+
+    public void Block()
+    {
+        _bossAnimator.PlayBlock();
+    }
 }
+
+
 
 

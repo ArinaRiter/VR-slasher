@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private GameObject DeadEnemy;
     private UIManager _UImanager;
 
+
     public GameObject deadEnemy
     {
         get { return DeadEnemy; }
@@ -58,7 +59,7 @@ public class Player : MonoBehaviour
 
     public void EnemyHit(float _playerDmg, GameObject curEnemy)
     {
-        if (curEnemy.gameObject.layer == 10)
+        if (curEnemy.gameObject.TryGetComponent<BossAI>(out BossAI bossAI))
         {
             if (curEnemy.gameObject.GetComponent<BossAI>()._bossHP - _playerDmg <= 0)
             {
@@ -80,6 +81,9 @@ public class Player : MonoBehaviour
             }
             else
             {
+                int n = Random.Range(1, 3);
+                if (n == 1) curEnemy.gameObject.GetComponent<BossAnimator>().PlayBlock();
+                else curEnemy.gameObject.GetComponent<BossAnimator>().PlayImpact();
                 curEnemy.gameObject.GetComponent<BossAI>()._bossHP -= _playerDmg;
                 return;
             }
