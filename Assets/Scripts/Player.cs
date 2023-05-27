@@ -7,13 +7,14 @@ using Random = UnityEngine.Random;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _health;
+
     [SerializeField] private float _maxHealth;
     [SerializeField] private float _experience;
 
     [SerializeField] private float _playerDmg;
     [SerializeField] private bool _enemyisdead;
     private GameObject DeadEnemy;
-    private UIManager _UImanager;
+    public UIManager _UImanager;
 
 
     public GameObject deadEnemy
@@ -31,7 +32,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _health = _maxHealth;
-        //_UImanager.SetInitialHealth(_maxHealth);
     }
     public void TakeDamage(float damage)
     {
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         else
         {
             _health -= damage;
-            //_UImanager.UpdateHealth(_health);
+            UIManager.SetHealthBarValue(_health / _maxHealth);
             return;
         }
     }
