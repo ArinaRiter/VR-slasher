@@ -67,9 +67,11 @@ public class Player : MonoBehaviour
                 //Destroy(curEnemy);
                 curEnemy.gameObject.GetComponent<Animator>().enabled = false;
                 curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
+                curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 _enemyisdead = true;
                 deadEnemy = curEnemy;
                 //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
+                curEnemy.gameObject.GetComponent<CharacterController>().enabled = false;
                 var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
                 foreach (var collider in colliders)
                 {
@@ -95,6 +97,7 @@ public class Player : MonoBehaviour
                 curEnemy.gameObject.GetComponent<EnemyAI>()._EnemyHP = 0;
                 curEnemy.gameObject.GetComponent<Animator>().enabled = false;
                 curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
+                curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 _enemyisdead = true;
                 deadEnemy = curEnemy;
                 var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();

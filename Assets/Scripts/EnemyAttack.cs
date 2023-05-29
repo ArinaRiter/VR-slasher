@@ -46,18 +46,18 @@ public class EnemyAttack : MonoBehaviour
 
         _timer = 0;
 
-        if (_player.enemyisdead)
-        {
-            _player.deadEnemy.GetComponent<EnemyAttack>()._damage = 0;
-        }
+        //if (_player.enemyisdead)
+        //{
+        //    _player.deadEnemy.GetComponent<EnemyAttack>()._damage = 0;
+        //}
 
     }
 
     public void TryAttackPlayer()
     {
         _player.TakeDamage(_damage);
-        //var slash = curEnemy.GetComponentInChildren<ParticleSystem>();
-        var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
+        var slash = GetComponentInChildren<ParticleSystem>();
+        //var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
         source.clip = sounds[Random.Range(0, sounds.Length)];
         source.PlayDelayed(0.8f);
         //if (psarray.Length > 0)
