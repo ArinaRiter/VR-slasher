@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float _playerDmg;
     [SerializeField] private bool _enemyisdead;
+
     private GameObject DeadEnemy;
     public UIManager _UImanager;
     public float valueforhealthbar;
@@ -78,15 +79,18 @@ public class Player : MonoBehaviour
                     collider.GetComponent<Collider>().isTrigger = false;
                 }
                 _experience += Random.Range(90, 120);
-                Destroy(deadEnemy, 10);
+                Destroy(deadEnemy, 3);
                 return;
             }
             else
             {
                 int n = Random.Range(1, 3);
                 if (n == 1) curEnemy.gameObject.GetComponent<BossAnimator>().PlayBlock();
-                else curEnemy.gameObject.GetComponent<BossAnimator>().PlayImpact();
-                curEnemy.gameObject.GetComponent<BossAI>()._bossHP -= _playerDmg;
+                else
+                {
+                    curEnemy.gameObject.GetComponent<BossAnimator>().PlayImpact();
+                    curEnemy.gameObject.GetComponent<BossAI>()._bossHP -= _playerDmg;
+                }
                 return;
             }
         }
@@ -106,7 +110,7 @@ public class Player : MonoBehaviour
                     collider.GetComponent<Collider>().isTrigger = false;
                 }
                 _experience += Random.Range(90, 120);
-                Destroy(deadEnemy, 10);
+                Destroy(deadEnemy, 3);
                 return;
             }
             else
