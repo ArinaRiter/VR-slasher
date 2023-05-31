@@ -10,12 +10,10 @@ public class BossShield : MonoBehaviour
     public void TakeOutShield()
     {
         _shield.SetActive(true);
-
     }
 
     public void PutShield()
     {
         _shield.SetActive(false);
-
     }
 }
