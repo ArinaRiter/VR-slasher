@@ -10,6 +10,7 @@ public class TreasureChest : MonoBehaviour
     private string open = "Near";
     private Player _player;
     [SerializeField] private AudioSource opening;
+    private bool hasPlayed = false;
     void Start()
     {
         _player = FindObjectOfType<Player>();
@@ -18,7 +19,11 @@ public class TreasureChest : MonoBehaviour
     {
         if (Vector3.Distance(gameObject.transform.position, _player.transform.position) < _range)
         {
-            opening.Play();
+            if (!hasPlayed)
+            {
+                opening.PlayOneShot(opening.clip);
+                hasPlayed = true;
+            }
             animator.SetBool(open, true);
             Invoke("Winner", 10);
         }
