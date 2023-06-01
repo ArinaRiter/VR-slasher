@@ -1,7 +1,9 @@
 using Pathfinding;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
@@ -20,12 +22,13 @@ public class Player : MonoBehaviour
 
     public ParticleSystem smoke;
 
+    public TMP_Text exptext;
+
     public GameObject deadEnemy
     {
         get { return DeadEnemy; }
         set { DeadEnemy = value; }
     }
-    //[SerializeField] private AudioSource _deathsound;
     public bool enemyisdead
     {
         get { return _enemyisdead; }
@@ -36,13 +39,17 @@ public class Player : MonoBehaviour
     {
         _health = _maxHealth;
     }
+
+    private void Update()
+    {
+        exptext.text = "exp: " + _experience;
+    }
     public void TakeDamage(float damage)
     {
         if (_health - damage <= 0)
         {
             Debug.Log("Died");
             SceneManager.LoadScene("Dead");
-            //_deathsound.Play();
             _experience = 0;
             return;
         }
@@ -67,14 +74,12 @@ public class Player : MonoBehaviour
             if (curEnemy.gameObject.GetComponent<BossAI>()._bossHP - _playerDmg <= 0)
             {
                 curEnemy.gameObject.GetComponent<BossAI>()._bossHP = 0;
-                //Destroy(curEnemy);
                 curEnemy.gameObject.GetComponent<Animator>().enabled = false;
                 curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
                 curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 _enemyisdead = true;
                 smoke.Play();
                 deadEnemy = curEnemy;
-                //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 curEnemy.gameObject.GetComponent<CharacterController>().enabled = false;
                 var colliders = curEnemy.GetComponentsInChildren<CharacterJoint>();
                 foreach (var collider in colliders)
