@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public UIManager _UImanager;
     public float valueforhealthbar;
 
+    public ParticleSystem smoke;
+
     public GameObject deadEnemy
     {
         get { return DeadEnemy; }
@@ -70,6 +72,7 @@ public class Player : MonoBehaviour
                 curEnemy.gameObject.GetComponent<AIPath>().enabled = false;
                 curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 _enemyisdead = true;
+                smoke.Play();
                 deadEnemy = curEnemy;
                 //curEnemy.gameObject.GetComponent<EnemyAttack>().enabled = false;
                 curEnemy.gameObject.GetComponent<CharacterController>().enabled = false;
@@ -80,6 +83,7 @@ public class Player : MonoBehaviour
                 }
                 _experience += Random.Range(90, 120);
                 Destroy(deadEnemy, 3);
+                smoke.transform.position = deadEnemy.transform.position;
                 return;
             }
             else
@@ -110,7 +114,9 @@ public class Player : MonoBehaviour
                     collider.GetComponent<Collider>().isTrigger = false;
                 }
                 _experience += Random.Range(90, 120);
-                Destroy(deadEnemy, 3);
+                Destroy(deadEnemy, 1);
+                smoke.Play();
+                smoke.transform.position = deadEnemy.transform.position;
                 return;
             }
             else

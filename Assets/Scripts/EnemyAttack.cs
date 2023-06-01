@@ -60,14 +60,6 @@ public class EnemyAttack : MonoBehaviour
         //var slash = GameObject.Find("slash").GetComponent<ParticleSystem>();
         source.clip = sounds[Random.Range(0, sounds.Length)];
         source.PlayDelayed(0.8f);
-        //if (psarray.Length > 0)
-        //{
-        //    for (int i = 0; i < psarray.Length; i++)
-        //    {
-        //        psarray[i].Play();
-        //    }
-
-        //}
         slash.Play();
         Debug.Log("TryAttackPlayer");
         CanAttack = false;
