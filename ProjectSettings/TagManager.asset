@@ -10,6 +10,9 @@ TagManager:
   - Enemy
   - TreasureLight
   - Boss
+  - Point
+  - Rat
+  - Snake
   layers:
   - Default
   - TransparentFX
