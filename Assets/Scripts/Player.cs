@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 
     public TMP_Text exptext;
 
+    [SerializeField] private GameObject walls;
     public GameObject deadEnemy
     {
         get { return DeadEnemy; }
@@ -88,6 +89,7 @@ public class Player : MonoBehaviour
                 }
                 _experience += Random.Range(90, 120);
                 Destroy(deadEnemy, 3);
+                walls.SetActive(false);
                 smoke.transform.position = deadEnemy.transform.position;
                 return;
             }

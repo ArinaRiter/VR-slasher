@@ -1,60 +1,164 @@
 fileFormatVersion: 2
 guid: c346267f730c4b84ab06c719f190199f
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Custom_Normals
-    100002: Custom_Normals__10_
-    100004: Custom_Normals__11_
-    100006: Custom_Normals__12_
-    100008: Custom_Normals__13_
-    100010: Custom_Normals__14_
-    100012: Custom_Normals__15_
-    100014: Custom_Normals__16_
-    100016: Custom_Normals__17_
-    100018: Custom_Normals__18_
-    100020: Custom_Normals__19_
-    100022: Custom_Normals__1_
-    100024: Custom_Normals__2_
-    100026: Custom_Normals__3_
-    100028: Custom_Normals__4_
-    100030: Custom_Normals__5_
-    100032: Custom_Normals__6_
-    100034: Custom_Normals__7_
-    100036: Custom_Normals__8_
-    100038: Custom_Normals__9_
-    100040: Leaves
-    100042: //RootNode
-    100044: Tree_Normals
-    400000: Custom_Normals
-    400002: Custom_Normals__10_
-    400004: Custom_Normals__11_
-    400006: Custom_Normals__12_
-    400008: Custom_Normals__13_
-    400010: Custom_Normals__14_
-    400012: Custom_Normals__15_
-    400014: Custom_Normals__16_
-    400016: Custom_Normals__17_
-    400018: Custom_Normals__18_
-    400020: Custom_Normals__19_
-    400022: Custom_Normals__1_
-    400024: Custom_Normals__2_
-    400026: Custom_Normals__3_
-    400028: Custom_Normals__4_
-    400030: Custom_Normals__5_
-    400032: Custom_Normals__6_
-    400034: Custom_Normals__7_
-    400036: Custom_Normals__8_
-    400038: Custom_Normals__9_
-    400040: Leaves
-    400042: //RootNode
-    400044: Tree_Normals
-    2100000: Optimized_Bark_Material
-    2100002: Maple_Optimized_Leaf
-    2100004: Maple_Optimized_Bark
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Maple_LOD0
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Custom_Normals
+  - first:
+      1: 100002
+    second: Custom_Normals__10_
+  - first:
+      1: 100004
+    second: Custom_Normals__11_
+  - first:
+      1: 100006
+    second: Custom_Normals__12_
+  - first:
+      1: 100008
+    second: Custom_Normals__13_
+  - first:
+      1: 100010
+    second: Custom_Normals__14_
+  - first:
+      1: 100012
+    second: Custom_Normals__15_
+  - first:
+      1: 100014
+    second: Custom_Normals__16_
+  - first:
+      1: 100016
+    second: Custom_Normals__17_
+  - first:
+      1: 100018
+    second: Custom_Normals__18_
+  - first:
+      1: 100020
+    second: Custom_Normals__19_
+  - first:
+      1: 100022
+    second: Custom_Normals__1_
+  - first:
+      1: 100024
+    second: Custom_Normals__2_
+  - first:
+      1: 100026
+    second: Custom_Normals__3_
+  - first:
+      1: 100028
+    second: Custom_Normals__4_
+  - first:
+      1: 100030
+    second: Custom_Normals__5_
+  - first:
+      1: 100032
+    second: Custom_Normals__6_
+  - first:
+      1: 100034
+    second: Custom_Normals__7_
+  - first:
+      1: 100036
+    second: Custom_Normals__8_
+  - first:
+      1: 100038
+    second: Custom_Normals__9_
+  - first:
+      1: 100040
+    second: Leaves
+  - first:
+      1: 100042
+    second: //RootNode
+  - first:
+      1: 100044
+    second: Tree_Normals
+  - first:
+      4: 400000
+    second: Custom_Normals
+  - first:
+      4: 400002
+    second: Custom_Normals__10_
+  - first:
+      4: 400004
+    second: Custom_Normals__11_
+  - first:
+      4: 400006
+    second: Custom_Normals__12_
+  - first:
+      4: 400008
+    second: Custom_Normals__13_
+  - first:
+      4: 400010
+    second: Custom_Normals__14_
+  - first:
+      4: 400012
+    second: Custom_Normals__15_
+  - first:
+      4: 400014
+    second: Custom_Normals__16_
+  - first:
+      4: 400016
+    second: Custom_Normals__17_
+  - first:
+      4: 400018
+    second: Custom_Normals__18_
+  - first:
+      4: 400020
+    second: Custom_Normals__19_
+  - first:
+      4: 400022
+    second: Custom_Normals__1_
+  - first:
+      4: 400024
+    second: Custom_Normals__2_
+  - first:
+      4: 400026
+    second: Custom_Normals__3_
+  - first:
+      4: 400028
+    second: Custom_Normals__4_
+  - first:
+      4: 400030
+    second: Custom_Normals__5_
+  - first:
+      4: 400032
+    second: Custom_Normals__6_
+  - first:
+      4: 400034
+    second: Custom_Normals__7_
+  - first:
+      4: 400036
+    second: Custom_Normals__8_
+  - first:
+      4: 400038
+    second: Custom_Normals__9_
+  - first:
+      4: 400040
+    second: Leaves
+  - first:
+      4: 400042
+    second: //RootNode
+  - first:
+      4: 400044
+    second: Tree_Normals
+  - first:
+      21: 2100000
+    second: Optimized_Bark_Material
+  - first:
+      21: 2100002
+    second: Maple_Optimized_Leaf
+  - first:
+      21: 2100004
+    second: Maple_Optimized_Bark
+  - first:
+      23: 2300000
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Maple_LOD0
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -72,7 +176,7 @@ ModelImporter:
       name: Optimized_Bark_Material
     second: {fileID: 2100000, guid: 4cae3dd25187ebf4e918924930ee5934, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -81,6 +185,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -105,25 +210,34 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -132,10 +246,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -145,13 +259,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

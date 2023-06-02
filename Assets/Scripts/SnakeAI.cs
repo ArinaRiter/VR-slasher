@@ -16,6 +16,19 @@ public class SnakeAI : MonoBehaviour
     private int count = 9;
     public bool _killRat;
     private float _distance;
+    private static readonly int Attack = Animator.StringToHash("Attack");
+
+    public void PlayAttack()
+    {
+        animator.SetTrigger(Attack);
+    }
+
+    private void Playertakedamage()
+    {
+        _player.TakeDamage(100);
+    }
+
+    [SerializeField] GameObject snake;
     void Start()
     {
         _player = GameObject.FindObjectOfType<Player>();
@@ -37,8 +50,8 @@ public class SnakeAI : MonoBehaviour
             _distance =  Vector3.Distance(gameObject.transform.position, _player.transform.position);
             if (_distance < 3)
             {
-                gameObject.GetComponent<EnemyAnimator>().PlayAttack();
-                _player.TakeDamage(100);
+                PlayAttack();
+                Invoke("Playertakedamage", 3);
             }
         }
         else if (agent != null && agent.remainingDistance <= agent.stoppingDistance)

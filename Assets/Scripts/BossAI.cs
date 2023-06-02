@@ -26,6 +26,8 @@ public class BossAI : MonoBehaviour
 
 
     [SerializeField] private float _BossHP;
+
+    [SerializeField] private GameObject walls;
     public float _bossHP
     {
         get
@@ -116,6 +118,8 @@ public class BossAI : MonoBehaviour
         if (Vector3.Distance(gameObject.transform.position, _player.transform.position) <= _targetFollowRange)
         {
             currentState = BossStates.Strafing;
+            walls.SetActive(true);
+
         }
         else
         {

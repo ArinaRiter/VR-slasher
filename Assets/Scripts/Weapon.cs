@@ -11,6 +11,9 @@ public class Weapon : MonoBehaviour
     public AudioClip[] sounds;
     private AudioSource source;
 
+    [SerializeField] private SnakeAI _snake;
+    [SerializeField] private RatAI _rat;
+
 
 
 
@@ -26,16 +29,18 @@ public class Weapon : MonoBehaviour
         }
         if (other.gameObject.transform.root.gameObject.CompareTag("Rat"))
         {
-            Destroy(other, 3);
-            source.clip = sounds[Random.Range(0, sounds.Length)];
-            source.PlayOneShot(source.clip);
+            Destroy(other.gameObject);
+            //source.clip = sounds[Random.Range(0, sounds.Length)];
+            //source.PlayOneShot(source.clip);
+            _snake._killRat = true;
             //source.Play();
         }
         if (other.gameObject.transform.root.gameObject.CompareTag("Snake"))
         {
-            Destroy(other, 3);
-            source.clip = sounds[Random.Range(0, sounds.Length)];
-            source.PlayOneShot(source.clip);
+            Destroy(other.gameObject);
+            _rat._killSnake = true;
+            //source.clip = sounds[Random.Range(0, sounds.Length)];
+            //source.PlayOneShot(source.clip);
             //source.Play();
         }
     }

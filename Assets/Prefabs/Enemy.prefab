@@ -19544,7 +19544,7 @@ MonoBehaviour:
   _roamTarget: {fileID: 9211371981961168190}
   _targetFollowRange: 7
   _enemyAttack: {fileID: 2554122219632894808}
-  _enemyHP: 15
+  _enemyHP: 45
   _stopTargetFollowingRange: 15
   _aiDestinationSetter: {fileID: 817949029782392232}
   _enemyAnimator: {fileID: 8094187966322356181}
@@ -19700,7 +19700,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.2
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
