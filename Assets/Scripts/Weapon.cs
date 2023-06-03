@@ -16,7 +16,6 @@ public class Weapon : MonoBehaviour
 
 
 
-
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.transform.root.gameObject.CompareTag("Enemy"))

@@ -27,6 +27,8 @@ public class BossAI : MonoBehaviour
 
     [SerializeField] private float _BossHP;
 
+    public bool bossAlive;
+
     [SerializeField] private GameObject walls;
     public float _bossHP
     {
@@ -119,7 +121,8 @@ public class BossAI : MonoBehaviour
         {
             currentState = BossStates.Strafing;
             walls.SetActive(true);
-
+            bossAlive = true;
+            GameObject.FindGameObjectWithTag("Weapon").GetComponent<GrabParent>().enabled = false;
         }
         else
         {

@@ -16,6 +16,8 @@ public class RatAI : MonoBehaviour
 
     public bool _killSnake;
 
+    public ParticleSystem ratbyebye;
+
     [SerializeField] GameObject point1;
     [SerializeField] GameObject point2;
 
@@ -40,9 +42,6 @@ public class RatAI : MonoBehaviour
                 countzero = true;
             }
             point1.SetActive(false);
-            //point2.SetActive(true);
-
-            //PointSet();
             Debug.Log(points2.Count);
             //agent = animator.GetComponent<NavMeshAgent>();
             agent.SetDestination(points2[count].position);
@@ -54,7 +53,11 @@ public class RatAI : MonoBehaviour
             }
             else
             {
+                ratbyebye.transform.position = GameObject.FindGameObjectWithTag("Rat").transform.position;
+                ratbyebye.Play();
                 Destroy(GameObject.FindWithTag("Rat"));
+
+
             }
 
         }
