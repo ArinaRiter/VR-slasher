@@ -90,7 +90,6 @@ public class Player : MonoBehaviour
                 _experience += Random.Range(90, 120);
                 Destroy(deadEnemy, 3);
                 walls.SetActive(false);
-                GameObject.FindGameObjectWithTag("Weapon").GetComponent<GrabParent>().enabled = true;
                 smoke.transform.position = deadEnemy.transform.position;
                 return;
             }

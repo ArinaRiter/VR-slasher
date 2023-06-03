@@ -122,7 +122,6 @@ public class BossAI : MonoBehaviour
             currentState = BossStates.Strafing;
             walls.SetActive(true);
             bossAlive = true;
-            GameObject.FindGameObjectWithTag("Weapon").GetComponent<GrabParent>().enabled = false;
         }
         else
         {
